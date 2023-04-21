@@ -14,4 +14,13 @@ class ApplicationController < ActionController::Base
       "error": 'goodbye world!'
     }
   end
+
+  def homework
+    @data = {message: 'this is a JSON format'}
+    respond_to do |format|
+      format.html {render html: 'this is html'}
+      format.json {render json: @data}
+    end
+  end
+
 end

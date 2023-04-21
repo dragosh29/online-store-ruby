@@ -6,5 +6,5 @@ Rails.application.routes.draw do
 
   get 'goodbye', to: 'application#goodbye'
   get 'extra', to: "application#extra"
-
+  get 'homework', to: 'application#homework'
 end
